@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 100px;
+            height: 30px;
+            border: 1px solid;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="time">2020/12/16</div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ol>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ol>
+    <button id="btn">唐伯虎</button>
+
+    <script>
+        var ito = document.getElementById('time');
+        console.log(ito);
+        console.log(typeof ito);
+        console.dir(ito);
+        var tomo = document.getElementsByTagName('li');
+        console.log(tomo);
+        console.log(typeof tomo);
+        console.log(tomo[0]);
+        for(var i = 0; i < tomo.length; i++){
+            console.log(tomo[i]);
+        }
+        var saru = document.getElementsByTagName("ol");
+        var btn = document.getElementById("btn");
+        btn.onclick = function(){
+            alert('点秋香');
+        }
+        var div = document.getElementById("time");
+        div.onclick = function(){
+            console.log("我被选中了");
+        }
+        
+        
+
+
+
+
+       
+
+            
+        
+
+    
+
+
+    </script>
+    
+    
+</body>
+</html>
